@@ -1,0 +1,11 @@
+<html>
+<head>
+    <title>Insured Assurance</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 50px;">
+    <h2 style="color: #2c3e50;">Insured Assurance - Corporate Dashboard</h2>
+    <hr>
+    <p>This application was deployed via <b>GitHub Actions & Jenkins</b>.</p>
+    <a href="hello">Access Agent Portal (Servlet)</a>
+</body>
+</html>
