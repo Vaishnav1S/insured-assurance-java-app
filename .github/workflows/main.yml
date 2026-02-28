@@ -3,7 +3,7 @@ name: Insured Assurance CI-CD
 on:
   push:
     branches: [ "main" ]
-  workflow_dispatch:
+  workflow_dispatch: # Allows you to run it manually from the Actions tab
 
 jobs:
   build-and-deploy:
@@ -17,10 +17,10 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: maven
+          cache: maven # This speeds up your build by saving dependencies
 
       - name: Build with Maven
-        run: mvn clean package
+        run: mvn -B clean package # -B runs in non-interactive mode
 
       - name: Trigger Jenkins Deployment
         uses: appleboy/jenkins-action@master
